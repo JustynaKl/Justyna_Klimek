@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzień Tygodnia</title>
+</head>
+<body>
+    <h2>Jaki dzisiaj jest dzień? - podaj liczbę i nazwę dnia</h2>
+    <div></div>
+
+    <script>
+        const div = document.querySelector('div');
+        const data = new Date();
+        const dni_tygodnia = data.getDay();
+        if(dni_tygodnia==1) document.write('Poniedziałek');
+        if(dni_tygodnia==2) document.write('Wtorek');
+        if(dni_tygodnia==3) document.write('Środa');
+        if(dni_tygodnia==4) document.write('Czwartek');
+        if(dni_tygodnia==5) document.write('Piątek');
+        if(dni_tygodnia==6) document.write('Sobota');
+        if(dni_tygodnia==0) document.write('Niedziela');
+
+        div.textContent = (`${dni_tygodnia}`)
+    </script>
+</body>
+</html>
